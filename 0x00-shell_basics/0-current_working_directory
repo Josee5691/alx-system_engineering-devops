@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "$(pwd)"
+cd 0x00-shell_basics
+pwd
