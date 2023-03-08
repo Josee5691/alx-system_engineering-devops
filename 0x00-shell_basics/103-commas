@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1A | awk 'BEGIN{RS="\0"}{printf "%s%s", (/^\.$/||/^\.\.$/ ? $0"/" : $0), (NR%2 ? ", " : "\n")}'
+ls -1a | grep -E '^\.{0,2}$' -v | awk 'BEGIN{RS="\0"}{printf "%s%s", (/\/$/ ? $0 : $0"/"), (NR%2 ? ", " : "\n")}'
