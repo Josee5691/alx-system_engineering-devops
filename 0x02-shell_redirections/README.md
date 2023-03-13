@@ -23,3 +23,4 @@ The -v option invert the match and display all lines that do not contain the pat
 21-reverse reverses the input using the rev command
 22-users_and_homes displays all users and their home directories, sorted by users
 100-empty_casks finds all empty files and directories in the current directory and all sub-directories
+101-gifs  lists all the files with a .gif extension in the current directory and all its sub-directories
