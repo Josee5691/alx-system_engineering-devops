@@ -13,3 +13,4 @@
 13-unique  takes a list of words as input and prints only words that appear exactly once.
 14-findthatword uses the grep utility to search for the pattern "root" in the file /etc/passwd. grep will print all lines that contain the pattern, which in this case will be all lines containing information about the "root" user 
 15-countthatword Display the number of lines that contain the pattern “bin” in the file /etc/passwd
+16-whatsnext uses the grep utility with the -A option to display the 3 lines that come after each line containing the pattern "root" in the file /etc/passwd. grep will search the file for the pattern and print the matching lines along with the specified number of lines after them.
