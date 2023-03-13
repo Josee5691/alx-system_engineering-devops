@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname '*.gif' -printf '%f\n' | rev | cut -c 5- | rev | sort -f
+find . -type f -iname '*.gif' -exec sh -c 'echo $(rev <<< "${1%.*}")' _ {} \+ | sort -f
