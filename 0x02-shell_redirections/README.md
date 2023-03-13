@@ -11,3 +11,4 @@
 11-directories counts the number of directories and sub-directories in the current directory
 12-newest_files displays the 10 newest files in the current directory.
 13-unique  takes a list of words as input and prints only words that appear exactly once.
+14-findthatword uses the grep utility to search for the pattern "root" in the file /etc/passwd. grep will print all lines that contain the pattern, which in this case will be all lines containing information about the "root" user 
