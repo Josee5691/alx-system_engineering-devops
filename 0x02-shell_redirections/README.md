@@ -6,3 +6,4 @@
 5-firstlines displays the first 10 lines of a file
 6-third_line displays the third line of a file
 8-cwd_state writes the output of ls -la to a file
+9-duplicate_last_line duplicates the last line of the file iacta
