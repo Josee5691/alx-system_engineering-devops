@@ -17,3 +17,4 @@
 17-hidethisword Display all the lines in the file /etc/passwd that do not contain the pattern “bin”.
 
 The -v option invert the match and display all lines that do not contain the pattern "bin" in the file /etc/passwd. grep will search the file for lines that do not match the pattern and print them
+18-letteronly displays all lines of the file /etc/ssh/sshd_config starting with a letter
