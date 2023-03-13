@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -empty -printf '%P\n' -o -type d -empty -printf '%P\n' | cut -d'/' -f2-
+find . -type d -empty -printf '%P\n' -o -type f -empty -printf '%P\n'
