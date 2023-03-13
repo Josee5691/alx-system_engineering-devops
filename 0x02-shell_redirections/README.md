@@ -20,3 +20,4 @@ The -v option invert the match and display all lines that do not contain the pat
 18-letteronly displays all lines of the file /etc/ssh/sshd_config starting with a letter
 19-AZ replaces  all characters A and c from input to Z and e respectively using the tr command
 20-hiago removes all letters c and C from input using tr -d
+21-reverse reverses the input using the rev command
