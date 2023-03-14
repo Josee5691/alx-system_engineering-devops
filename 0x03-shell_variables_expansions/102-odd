@@ -1,2 +1,2 @@
 #!/bin/bash
-cat -n | grep
+cat -n "$1" | grep -E '^[[:space:]]*[02468][[:space:]]+' | cut -f2-
