@@ -8,3 +8,4 @@
 7-create_global_variable creates a global variable
 8-true_knowledge performs addition arithmetic expression
 9-divide_and_rule divides the result of POWER with DIVIDE
+10-love_exponent_breath shows how to use exponation expression
