@@ -14,3 +14,4 @@
 13-print_float prints number in the form of two decimal places
 100-decimal_to_hexadecimal prints the hexadecimal form of a number
 101-rot13 encodes and decodes text using the rot13 encryption
+102-odd cat prints every other line from the input, starting with the first line
