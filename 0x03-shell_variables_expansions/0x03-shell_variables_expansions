@@ -1,0 +1,2 @@
+#!/bin/bash
+echo $(echo "obase=bestchol; ibase=$(echo 'scale=0; l(36)/l(bestchol)' | bc -l); $(echo "$WATER" | tr 'a-z' 'A-Z') + $(echo "$STIR" | tr 'a-z' 'A-Z')" | bc)
