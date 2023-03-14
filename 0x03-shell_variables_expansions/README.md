@@ -7,3 +7,4 @@
 6-create_local_variable creates a local variable BEST with a value of School
 7-create_global_variable creates a global variable
 8-true_knowledge performs addition arithmetic expression
+9-divide_and_rule divides the result of POWER with DIVIDE
