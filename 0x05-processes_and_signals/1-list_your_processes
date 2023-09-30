@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# get currently running processes
+ps axjf
