@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Use ifconfig to fetch IPv4 addresses and filter the output
+ipv4_addresses=$(ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | awk '{print $2}' | grep -v '127.0.0.1')
+
+# Display the IPv4 addresses
+echo "$ipv4_addresses"
+

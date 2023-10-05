@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Script to configure hosts file for Ubuntu 20.04 LTS
+
+# Backup original hosts file
+sudo cp /etc/hosts /etc/hosts.bak
+
+# Change localhost entry
+sudo sed -i 's/127.0.0.1/127.0.0.2/g' /etc/hosts
+
+# Change facebook.com entry
+sudo sed -i 's/157.240.11.35/8.8.8.8/g' /etc/hosts
+
+# Output changes
+echo "Changes made:"
+grep -E 'localhost|facebook.com' /etc/hosts
+
+# Prompt to revert changes
+echo "If you want to revert the changes, run: sudo mv /etc/hosts.bak /etc/hosts"
+
