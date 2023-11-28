@@ -1,2 +1,3 @@
 #!/usr/bin/env ruby
-puts ARGV[0].scan(/\[from:(?<sender>.*?)\] \[to:(?<reciever>.*?)\] \[flags:(?<flags>.*?)\]/)
+log_entries.each { |entry| match = entry.match(/\[from:(?<sender>.*?)\] \[to:(?<receiver>.*?)\] \[flags:(?<flags>.*?)\]/); puts "#{match[:sender]},#{match[:receiver]},#{match[:flags]}" if match }
+
