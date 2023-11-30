@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This script listens on port 98 on localhost and prints the received data
+
+# Set the port number
+port=98
+
+# Listen on the specified port
+while true; do
+    # Use netcat to listen on the specified port and echo received data
+    echo "Waiting for a connection..."
+    nc -l -p $port -q 1 && echo "Connection established. Listening for data..." | nc -l -p $port -q 1
+done
+
