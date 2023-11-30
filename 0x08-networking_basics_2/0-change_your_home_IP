@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script configures an Ubuntu server to change the resolution of localhost and facebook.com
+
+# Change localhost resolution to 127.0.0.2
+sudo sed -i 's/127.0.0.1/127.0.0.2/g' /etc/hosts
+
+# Change facebook.com resolution to 8.8.8.8
+sudo sed -i 's/\(facebook.com\)\s\+\(.*\)/8.8.8.8\t\1/g' /etc/hosts
+
