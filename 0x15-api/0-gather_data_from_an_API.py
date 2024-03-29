@@ -21,7 +21,7 @@ def fetch_todo_progress(employee_id):
             return
 
         # extract relevant information
-        employee_name = todos[0]['userId']
+        employee_name = todos[0]['username']
         total_tasks = len(todos)
         done_tasks = sum(1 for todo in todos if todo['completed'])
 
