@@ -5,6 +5,7 @@
 
 
 import requests
+import sys
 
 
 def fetch_todo_progress(employee_id):
@@ -21,7 +22,7 @@ def fetch_todo_progress(employee_id):
             return
 
         # extract relevant information
-        employee_name = todos[0]['username']
+        employee_name = todos[0]['userId']
         total_tasks = len(todos)
         done_tasks = sum(1 for todo in todos if todo['completed'])
 
@@ -33,3 +34,12 @@ def fetch_todo_progress(employee_id):
                 print(f'\t{todo["title"]}')
     except requests.exceptions.RequestException as e:
         print(f'Error fetching data: {e}')
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python script.py [employee_id]")
+        sys.exit(1)
+
+    employee_id = sys.argv[1]
+    fetch_todo_progress(employee_id)
