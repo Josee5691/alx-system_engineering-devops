@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+"""This module fetches and displays TODO list progress for a given employee Id"""
 import requests
 
 def fetch_todo_progress(employee_id):
